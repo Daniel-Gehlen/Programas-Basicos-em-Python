@@ -1,9 +1,10 @@
 number = 1
 while number != 0:
+    number = int(input('Digite um número: '))
     
-    number = int input(f'Digite um número: ')
-
-    if number % 2 == 0:
-      print('número par')
-    else: 
-      print('número impar')
+    if number == 0:
+        print('Programa encerrado.')
+    elif number % 2 == 0:
+        print('Número par')
+    else:
+        print('Número ímpar')

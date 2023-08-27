@@ -1,7 +1,7 @@
 name = 'Guido'
 
 for c in name:
-    print<(c)
+    print(c)
 
 name = 'Guido'
 for i, c in enumerate(name):
