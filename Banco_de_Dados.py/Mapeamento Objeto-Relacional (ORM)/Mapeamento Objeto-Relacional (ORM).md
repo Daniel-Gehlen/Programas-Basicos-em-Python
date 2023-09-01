@@ -1,42 +1,36 @@
-# Aqui está um exemplo de código em Python usando a biblioteca SQLAlchemy para realizar mapeamento
-# objeto-relacional e recuperar dados de um banco de dados:
+``` mermaid
+flowchart TD
+  importSQLAlchemy[import sqlalchemy]
+  importDeclarativeBase[import declarative_base]
+  importSessionmaker[import sessionmaker]
+  definirConexao[engine = create_engine 'sqlite:///exemplo_orm.db', echo=True]
+  criarClasse[Base = declarative_base]
+  criarTabela[Criar classe Aluno]
+  criarCampos[Definir campos da tabela]
+  criarTabelaBanco[Base.metadata.create_all engine]
+  criarSessao[Session = sessionmaker bind=engine]
+  criarSessaoInteracao[session = Session]
+  inserirAluno[novo_aluno = Aluno nome='David', idade=23]
+  adicionarAluno[session.add novo_aluno]
+  commitTransacao[session.commit]
+  consultarAlunos[alunos = session.query Aluno.all]
+  imprimirDados[Imprimir dados retornados]
+  fecharSessao[session.close]
 
-from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+  importSQLAlchemy --> definirConexao
+  importDeclarativeBase --> criarClasse
+  criarClasse --> criarCampos
+  criarCampos --> criarTabela
+  criarTabela --> criarTabelaBanco
+  criarTabelaBanco --> criarSessao
+  importSessionmaker --> criarSessao
+  criarSessao --> criarSessaoInteracao
+  criarSessaoInteracao --> inserirAluno
+  inserirAluno --> adicionarAluno
+  adicionarAluno --> commitTransacao
+  commitTransacao --> consultarAlunos
+  consultarAlunos --> imprimirDados
+  imprimirDados --> fecharSessao
 
-# Definir a conexão com o banco de dados
-engine = create_engine('sqlite:///exemplo_orm.db', echo=True)
 
-# Criar uma classe que representa a tabela no banco de dados
-Base = declarative_base()
-
-class Aluno(Base):
-    __tablename__ = 'alunos'
-    
-    id = Column(Integer, primary_key=True)
-    nome = Column(String)
-    idade = Column(Integer)
-
-# Criar a tabela no banco de dados (caso não exista)
-Base.metadata.create_all(engine)
-
-# Criar uma sessão para interagir com o banco de dados
-Session = sessionmaker(bind=engine)
-session = Session()
-
-# Inserir um aluno na tabela
-novo_aluno = Aluno(nome='David', idade=23)
-session.add(novo_aluno)
-session.commit()
-
-# Consultar e retornar todos os alunos
-alunos = session.query(Aluno).all()
-
-# Imprimir os dados retornados
-for aluno in alunos:
-    print(f'ID: {aluno.id}, Nome: {aluno.nome}, Idade: {aluno.idade}')
-
-# Fechar a sessão
-session.close()
-
+```

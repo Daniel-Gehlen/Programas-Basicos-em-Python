@@ -1,18 +1,16 @@
-login = input('Digite o seu login:')
-senha = input('Digite a sua senha:')
-if login == 'userpy' and senha == 'teste123':
-    print('Bem-Vindo userpy01')
-else:
-    print('Login falhou')
+``` mermaid
+graph TD
+    Start[Início]
+    Input[Entrada de Login e Senha]
+    CheckUser[Verificar Usuário e Senha]
+    Welcome[Exibir Mensagem de Boas-Vindas]
+    Failed[Exibir Mensagem de Falha]
+    End[Fim]
 
-# Se tivermos vários usuários
-login = input('Digite o seu login:')
-senha = input('Digite a sua senha:')
-if login == 'userpy' and senha == 'teste123':
-    print('Bem-Vindo userpy01')
-elif login == 'userpy02' and senha == 'teste02':
-    print('Bem-Vindo userpy02')
-elif login == 'userpy03' and senha == 'teste03':
-    print('Bem-Vindo userpy03')
-else:
-    print('Login falhou')
+    Start --> Input
+    Input --> CheckUser
+    CheckUser --> Welcome
+    CheckUser --> Failed
+    Welcome --> End
+    Failed --> End
+```

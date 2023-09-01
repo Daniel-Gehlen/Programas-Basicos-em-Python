@@ -1,10 +1,19 @@
-cor = input('Digite uma cor: verde, amarelo ou vermelho: ')
+``` mermaid
+graph TD
+    Start[Início]
+    Input[Entrada de Cor]
+    CheckColor[Verificar Cor]
+    Accelerate[Acelerar]
+    Caution[Atenção]
+    Stop[Parar]
+    End[Fim]
 
-if cor.lower() == 'verde':
-    print('Acelerar')
-
-elif cor.lower() == 'amarelo':
-    print('Atenção')
-
-else:
-    print('Parar')
+    Start --> Input
+    Input --> CheckColor
+    CheckColor --> Accelerate
+    CheckColor --> Caution
+    CheckColor --> Stop
+    Accelerate --> End
+    Caution --> End
+    Stop --> End
+```

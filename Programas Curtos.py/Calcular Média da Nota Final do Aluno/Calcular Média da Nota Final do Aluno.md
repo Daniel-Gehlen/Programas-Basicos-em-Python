@@ -1,8 +1,18 @@
-qtdade_faltas  = int(input('Digite a quantidade de faltas: '))
-media_final = float(input('Digite a média final: '))
+``` mermaid
+graph TD
+    Start[Início]
+    InputFaltas[Entrada: qtdade_faltas]
+    InputMedia[Entrada: media_final]
+    Check[Verificar condições]
+    Approve[Aluno aprovado]
+    Reprove[Aluno reprovado]
+    End[Fim]
 
-if qtdade_faltas <= 5 and media_final >= 7:
-    print('Aluno aprovado')
-
-else:
-    print('Aluno reprovado')
+    Start --> InputFaltas
+    InputFaltas --> Check
+    InputMedia --> Check
+    Check --> |qtdade_faltas <= 5 && media_final >= 7| Approve
+    Check --> |ou| Reprove
+    Approve --> End
+    Reprove --> End
+```

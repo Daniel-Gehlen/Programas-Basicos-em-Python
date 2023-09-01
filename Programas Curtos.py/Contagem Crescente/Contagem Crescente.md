@@ -1,11 +1,23 @@
-contagem = 0
-for contagem in range(1,10):
-    print(contagem)
+``` mermaid
+graph TD
+    Start[Início]
+    LoopFor[Loop For]
+    PrintFor[Imprimir Contagem]
+    EndFor[Fim do Loop For]
+    LoopWhile[Loop While]
+    PrintWhile[Imprimir Contagem]
+    Increment[Incrementar Contagem]
+    EndWhile[Fim do Loop While]
+    End[Fim]
 
-contagem = 0
-while(contagem < 10):
-    print(contagem)
-
-    contagem = contagem + 1
-
-    
+    Start --> LoopFor
+    LoopFor --> PrintFor
+    PrintFor --> LoopFor
+    LoopFor --> EndFor
+    EndFor --> LoopWhile
+    LoopWhile --> PrintWhile
+    PrintWhile --> Increment
+    Increment --> LoopWhile
+    Increment --> EndWhile
+    EndWhile --> End
+```

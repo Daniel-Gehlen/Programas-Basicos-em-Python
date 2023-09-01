@@ -1,11 +1,21 @@
-# #Módulo task_listing.py (Responsável por listar as tarefas existentes):
+``` mermaid
+graph TD
+  start[Start]
+  declareTasks[Declare tasks list]
+  callFunction[Call list_tasks function]
+  listTasks[list_tasks function]
+  iterateList[Iterate through tasks list]
+  determineStatus[Determine task status]
+  printTask[Print task information]
+  e[End]
 
-def list_tasks(tasks):
-    print("Task List:")
-    for idx, task in enumerate(tasks, start=1):
-        status = "Completed" if task["completed"] else "Incomplete"
-        print(f"{idx}. {task['name']} - {status}")
-
-if __name__ == "__main__":
-    tasks = [{"name": "Example Task 1", "completed": False}, {"name": "Example Task 2", "completed": True}]
-    list_tasks(tasks)
+  start --> declareTasks
+  declareTasks --> callFunction
+  callFunction --> listTasks
+  listTasks --> iterateList
+  iterateList --> determineStatus
+  determineStatus --> printTask
+  printTask --> iterateList
+  iterateList
+  e[End]
+```

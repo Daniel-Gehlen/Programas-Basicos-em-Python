@@ -1,19 +1,14 @@
-# O matplotlib é uma biblioteca de visualização de dados amplamente usada que oferece uma ampla 
-# variedade de gráficos e plotagens. Aqui está um exemplo simples usando o matplotlib para criar
-# um gráfico de barras:
+``` mermaid
+graph TD
+  importMatplotlib[Importar matplotlib.pyplot como plt]
+  dados[Dados de exemplo]
+  criarGrafico[Criar gráfico de barras]
+  definirEixos[Definir rótulos dos eixos e título]
+  mostrarGrafico[Mostrar o gráfico]
 
-import matplotlib.pyplot as plt
+  importMatplotlib -->|Passo 1| dados
+  dados -->|Passo 2| criarGrafico
+  criarGrafico -->|Passo 3| definirEixos
+  definirEixos -->|Passo 4| mostrarGrafico
 
-# Dados de exemplo
-cidades = ['Nova Iorque', 'Los Angeles', 'Chicago', 'Houston', 'Miami']
-populacao = [8175133, 3792621, 2695598, 2099451, 1420491]
-
-# Criando um gráfico de barras
-plt.bar(cidades, populacao)
-plt.xlabel('Cidades')
-plt.ylabel('População')
-plt.title('População de algumas cidades dos EUA')
-plt.show()
-
-# Neste exemplo, usamos a função bar() do matplotlib para criar um gráfico de barras mostrando 
-# a população de algumas cidades dos EUA.
+```
