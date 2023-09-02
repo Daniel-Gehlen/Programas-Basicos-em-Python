@@ -1,4 +1,6 @@
-# Meu Portfólio - Materias em que tenho conhecimentos. 
+# Portfólio - Matérias em que tenho conhecimentos. 
+
+## Todos os tópicos a seguir estão codificados e testados nas pastas.
 
 Em busca de melhorias constante.
 
