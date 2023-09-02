@@ -4,77 +4,108 @@
 
 Em busca de melhorias constante.
 
-## Algoritmos
-- Algoritmo BFS_Fila_busca_em_largura
-- Algoritmo Binary Search
-- Algoritmo DFS_Pilha_busca_em_profundidade
-- Algoritmo DFS_Recursividade_busca_em_profundidade
-- Algoritmo jump_search
-- Algoritmo Linear Search
-- Algoritmo linear interpolation
+## Pasta - Algoritmos
+
+### Busca
 - Busca Binária
 - Busca Sequencial Ordenada com While
+- Linear Search
+- jump_search
+
+### Ordenação
 - Merge Sort
 - Quick Sort
 - Selection Sort
 
-## Banco de Dados
+### Grafos
+- BFS_Fila_busca_em_largura
+- DFS_Pilha_busca_em_profundidade
+- DFS_Recursividade_busca_em_profundidade
+- Busca Binária
+
+## Pasta - Banco de Dados
+
+### Conceitos
 - Banco de dados
 - Banco de Dados DBMS
 - Banco de dados NoSQL
+
+### Bibliotecas
 - Biblioteca Matplotlib
 - Biblioteca Seaborn
 - Importando Funções da Biblioteca
+
+### Modelagem
 - Mapeamento Objeto-Relacional ORM
 - Modelagem usando SQL e um ORM
 
-## Conceitos em Python
+## Pasta - Conceitos em Python
+
+### Programação Orientada a Objetos
 - Abstração
 - Associação de Objetos
-- Classes em python
+- Classes em Python
 - Encapsulamento
 - Encapsulamento com getters e setters
-- Função Anonima Somar Lambda Sem def
 - Herança
-- Listas
 - Polymorphism in Code
+
+### Estruturas de Dados
+- Listas
 - Range
+
+## Pasta - Manipulação de Dados
+
+### Operações em DataFrames
+- Diferença entre loc e iloc
+- Métodos map e apply
+- NaN Not a Number
 - Selecionar linhas de um DataFrame
 
-## Modularidade
+## Pasta - Modularidade
+
+### Tarefas
 - Task creation
 - Task listing
 - Task manager
 
-## Princípios SOLID
+## Pasta - Princípios SOLID
+
+### Princípios de Design de Software
 - Dependency Inversion Principle
 - Interface Segregation Principle
 - Liskov Substitution Principle
 - Open and Closed Principle
 - Single Responsibility Principle
 
-## Condições
+## Pasta - Condições
+
+### Estruturas Condicionais
 - If else Valor2 e valor1
 - If name
 - Usando_for
 - while
 
-## Métodos
-- Diferença entre loc e iloc
-- Histogram vs Bar Chart
-- Métodos map e apply
-- NaN Not a Number
+## Pasta - Métodos
 
-## Parâmetros
+### Funções e Métodos
+- Função Anonima Somar  Lambda Sem def
+- Histogram vs Bar Chart
+
+## Pasta - Parâmetros
+
+### Passagem de Parâmetros
 - Args parametro posicional e não obrigatorio
 - Parêmetro nominal e não obrigatório kwargs
 - Parâmetro nominal sem valor default
 - Parâmetro posicional obrigatório com valor default
 - Parâmetro definidos e indefinidos
 
-## Pequenos Programas
+## Pasta - Pequenos Programas
+
+### Exemplos de Programas
 - Calcular Média da Nota Final do Aluno
-- Calcular o Imc
+- Calcular o IMC
 - Contagem Crescente
 - Def Imprimir Mensagem
 - Digite Seu Login
