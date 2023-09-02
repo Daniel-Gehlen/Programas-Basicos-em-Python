@@ -1,12 +1,18 @@
-#Módulo task_creation.py (Responsável por criar novas tarefas):
+``` mermaid
+graph TD
+  start[Start]
+  declareTasks[Declare tasks list]
+  getInput[Get input for task name]
+  callFunction[Call create_task function]
+  createTask[create_task function]
+  modifyList[Modify tasks list]
+  printResult[Print success message]
 
-# task_creation.py
 
-def create_task(tasks, task_name):
-    tasks.append({"name": task_name, "completed": False})
-    print(f"Task '{task_name}' created successfully.")
-
-if __name__ == "__main__":
-    tasks = []
-    task_name = input("Enter task name: ")
-    create_task(tasks, task_name)
+  start --> declareTasks
+  declareTasks --> getInput
+  getInput --> callFunction
+  callFunction --> createTask
+  createTask --> modifyList
+  modifyList --> printResult
+```

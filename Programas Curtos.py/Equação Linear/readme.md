@@ -1,9 +1,25 @@
-a = float(input('Digite o valor de a: '))
-b = float(input('Digite o valor de b: '))
+``` mermaid
+graph TD
+    Start[Início]
+    InputA[Entrada de a]
+    InputB[Entrada de b]
+    BuildEquation[Construir Equação]
+    PrintEquation[Imprimir Equação]
+    LoopStart[Início do Loop]
+    EvaluateEquation[Avaliar Equação]
+    PrintResult[Imprimir Resultado]
+    LoopEnd[Fim do Loop]
+    End[Fim]
 
-equacao = f'{a} * x + {b}'
-print(f'\nA formula geral da equação linear é (a * x + b): {equacao}')
-
-for x in range(5):
-    y = eval(equacao)
-    print(f'Resultado da equação para x = {x} é {y}')
+    Start --> InputA
+    InputA --> InputB
+    InputB --> BuildEquation
+    BuildEquation --> PrintEquation
+    PrintEquation --> LoopStart
+    LoopStart --> EvaluateEquation
+    EvaluateEquation --> PrintResult
+    PrintResult --> LoopEnd
+    LoopEnd --> LoopStart
+    LoopEnd --> End
+    LoopStart --> End
+```

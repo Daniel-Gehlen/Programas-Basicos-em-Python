@@ -1,4 +1,13 @@
-def imprimir_mensagem(disciplina, curso):
-    print(f'Minha primeira função: {disciplina}, do curso: {curso}.')
+``` mermaid
+graph TD
+    Start[Início]
+    CallFunction[Chamada da Função]
+    Function[Função imprimir_mensagem]
+    PrintMensagem[Imprimir Mensagem]
+    End[Fim]
 
-imprimir_mensagem('python', 'ADS')
+    Start --> CallFunction
+    CallFunction --> Function
+    Function --> PrintMensagem
+    PrintMensagem --> End
+```
