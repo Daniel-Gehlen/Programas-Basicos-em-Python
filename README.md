@@ -1,5 +1,5 @@
 ``` mermaid
-graph TD
+graph TB
 
 subgraph "Meu Portifólio - Coisas que sei fazer."
     subgraph "Pasta Algoritmos"
