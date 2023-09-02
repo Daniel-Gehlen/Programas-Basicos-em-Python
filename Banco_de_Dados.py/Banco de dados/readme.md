@@ -1,49 +1,30 @@
-import sqlite3
+``` mermaid
+graph TD
+  subgraph ConexaoBancoDados
+    import_sqlite3[Importar sqlite3]
+    connect[Conectar ao Banco de Dados]
+    create_table[Criar Tabela fornecedor]
+    cursor[Definir Cursor]
+  end
 
-conn = sqlite3.connect('aulaDB.db')
+  subgraph OperacoesCRUD
+    create_data[Operação CREATE]
+    read_data[Operação READ]
+    update_data[Operação UPDATE]
+    delete_data[Operação DELETE]
+  end
 
-# Criando a tabela "fornecedor" se ela não existir
-cursor = conn.cursor()
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS fornecedor (
-        id_fornecedor INTEGER PRIMARY KEY,
-        nome_fornecedor TEXT,
-        cnpj TEXT,
-        cidade TEXT,
-        estado TEXT,
-        cep TEXT,
-        data_cadastro DATE
-    )
-''')
-conn.commit()
+  subgraph Exemplo
+    numbers[Exemplo: 64, 34, 25, 12, 22]
+    print_result[Print Resultados]
+  end
 
-# CRUD - CREATE
-cursor.execute('''
-    INSERT INTO fornecedor (nome_fornecedor, cnpj, cidade, estado, cep, data_cadastro)
-    VALUES (?, ?, ?, ?, ?, ?)
-''', ('Empresa A', '11.111.111/1111-1', 'São Paulo', 'SP', '11111-111', '2020-01-01'))
-conn.commit()
-
-# READ
-cursor.execute('SELECT * FROM fornecedor')
-resultado = cursor.fetchall()
-print("Registros após inserção:")
-for linha in resultado:
-    print(linha)
-
-# UPDATE
-cursor.execute("UPDATE fornecedor SET cidade = ? WHERE id_fornecedor = ?", ('Campinas', 1))
-conn.commit()
-
-# DELETE
-cursor.execute('DELETE FROM fornecedor WHERE id_fornecedor = ?', (1,))
-conn.commit()
-
-# READ novamente após atualização e exclusão
-cursor.execute('SELECT * FROM fornecedor')
-resultado = cursor.fetchall()
-print("\nRegistros após atualização e exclusão:")
-for linha in resultado:
-    print(linha)
-
-conn.close()
+  import_sqlite3 --> connect
+  connect --> create_table
+  connect --> cursor
+  cursor --> create_data
+  create_data --> read_data
+  read_data --> print_result
+  update_data --> print_result
+  delete_data --> print_result
+```
