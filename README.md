@@ -1,4 +1,4 @@
-# Portfólio - Matérias em que tenho conhecimentos. 
+# Portfólio - Matérias em que tenho conhecimentos em Python. 
 
 ## Todos os tópicos a seguir estão codificados e testados nas pastas.
 
