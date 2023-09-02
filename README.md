@@ -1,7 +1,7 @@
 ``` mermaid
 graph TD;
 
-subgraph "Meu Portifólio - Coisas que sei fazer."
+    subgraph "Matéria em que tenho conhecimentos."
     subgraph "Pasta - Algoritmos"
         A[Algoritmo BFS Fila busca em largura]
         B[Algoritmo Binary Search]
@@ -17,6 +17,7 @@ subgraph "Meu Portifólio - Coisas que sei fazer."
         L[Selection Sort]
     end
 
+
     subgraph "Pasta - Banco de Dados"
         M[Banco de dados]
         N[Banco de Dados DBMS]
@@ -27,6 +28,7 @@ subgraph "Meu Portifólio - Coisas que sei fazer."
         S[Mapeamento Objeto-Relacional ORM]
         T[modelagem usando SQL e um ORM]
     end
+
 
     subgraph "Pasta - Conceitos em Python"
         U[Abstração]
