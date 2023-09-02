@@ -1,11 +1,12 @@
 ``` mermaid
 graph TD
 
+
 subgraph "Meu Portifólio - Coisas que sei fazer."
     subgraph "Pasta Algoritmos"
-     subgraph "Pasta Algoritmos"
+        style AlgoritmosRect fill:#f9f9f9,stroke:#1f77b4,stroke-width:2px,font-weight:bold,font-size:14px,font-family:Arial,rectangel;
         A[Algoritmo BFS Fila busca em largura]
-        B[Algoritmo Binary Search]
+        A[Algoritmo Binary Search]
         C[Algoritmo DFS Pilha busca em profundidade]
         D[Algoritmo DFS Recursividade busca em profundidade]
         E[Algoritmo Jump Search]
@@ -17,8 +18,10 @@ subgraph "Meu Portifólio - Coisas que sei fazer."
         K[Quick Sort]
         L[Selection Sort] 
     end 
-end
+
     subgraph "Pasta Banco de Dados"
+        style BancoDeDadosRect fill:#f9f9f9,stroke:#1f77b4,stroke-width:2px,font-weight:bold,font-size:14px,font-family:Arial,rectangel;
+
         M[Banco de dados]
         N[Banco de Dados DBMS]
         O[Banco de dados NoSQL]
@@ -28,8 +31,7 @@ end
         S[Mapeamento Objeto-Relacional ORM]
         T[Modelagem usando SQL e um ORM]
     end
-end
-    subgraph "Pasta Conceitos em Python"
+
     subgraph "Pasta Conceitos em Python"
         U[Abstração]
         V[Associação de Objetos]
@@ -43,8 +45,7 @@ end
         AD[Range]
         AE[Selecionar linhas de um DataFrame]
     end
-end
-    subgraph "Pasta Modularidade"
+
     subgraph "Pasta Modularidade"
         AF[Task creation]
         AG[Task listing]
@@ -52,31 +53,27 @@ end
     end
 
     subgraph "Pasta Princípios SOLID"
-    subgraph "Pasta Princípios SOLID"
         AI[Dependency Inversion Principle]
         AJ[Interface Segregation Principle]
         AK[Liskov Substitution Principle]
         AL[Open and Closed Principle]
         AM[Single Responsibility Principle]
     end
-end
-    subgraph "Pasta Condições"
+
     subgraph "Pasta Condições"
         AN[If else Valor2 e valor1]
         AO[If name]
         AP[Usando for]
         AQ[while]
     end
-end
-    subgraph "Pasta Métodos"
+
     subgraph "Pasta Métodos"
         AR[Diferença entre loc e iloc]
         AS[Histogram vs Bar Chart]
         AT[Métodos map e apply]
         AU[NaN Not a Number]
     end
-end
-    subgraph "Pasta Parâmetros"
+
     subgraph "Pasta Parâmetros"
         AV[Args parametro posicional e não obrigatorio]
         AW[Parêmetro nominal e não obrigatório kwargs]
@@ -84,7 +81,7 @@ end
         AY[Parâmetro posicional obrigatório com valor default]
         AZ[Parâmetro definidos e indefinidos]
     end
-end
+
     subgraph "Pasta Pequenos Programas"
         BA[Calcular Média da Nota Final do Aluno]
         BB[Calcular o Imc]
