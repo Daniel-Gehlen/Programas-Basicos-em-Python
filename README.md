@@ -1,93 +1,93 @@
 ``` mermaid
-graph TD;
+graph TD
 
 subgraph "Meu Portifólio - Coisas que sei fazer."
     subgraph "Pasta Algoritmos"
-        Algoritmo_BFS_Fila_busca_em_largura --> {Código}
-        Algoritmo_Binary_Search --> {Código}
-        Algoritmo_DFS_Pilha_busca_em_profundidade --> {Código}
-        Algoritmo_DFS_Recursividade_busca_em_profundidade --> {Código}
-        Algoritmo_Jump_Search --> {Código}
-        Algoritmo_Linear_Search --> {Código}
-        Algoritmo_Linear_Interpolation --> {Código}
-        Busca_Binária --> {Código}
-        Busca_Sequencial_Ordenada_com_While --> {Código}
-        Merge_Sort --> {Código}
-        Quick_Sort --> {Código}
-        Selection_Sort --> {Código}
-    end;
+        A[Algoritmo BFS Fila busca em largura]
+        B[Algoritmo Binary Search]
+        C[Algoritmo DFS Pilha busca em profundidade]
+        D[Algoritmo DFS Recursividade busca em profundidade]
+        E[Algoritmo Jump Search]
+        F[Algoritmo Linear Search]
+        G[Algoritmo Linear Interpolation]
+        H[Busca Binária]
+        I[Busca Sequencial Ordenada com While]
+        J[Merge Sort]
+        K[Quick Sort]
+        L[Selection Sort]
+    end
 
-    subgraph "Pasta Banco_de_Dados"
-        Banco_de_dados --> {Código}
-        Banco_de_Dados_(DBMS) --> {Código}
-        Banco_de_dados_NoSQL --> {Código}
-        Biblioteca_Matplotlib --> {Código}
-        Biblioteca_Seaborn --> {Código}
-        Importando_Funções_da_Biblioteca --> {Código}
-        Mapeamento_Objeto-Relacional_(ORM) --> {Código}
-        Modelagem_usando_SQL_e_um_(ORM) --> {Código}
-    end;
+    subgraph "Pasta Banco de Dados"
+        M[Banco de dados]
+        N[Banco de Dados DBMS]
+        O[Banco de dados NoSQL]
+        P[Biblioteca Matplotlib]
+        Q[Biblioteca Seaborn]
+        R[Importando Funções da Biblioteca]
+        S[Mapeamento Objeto-Relacional ORM]
+        T[Modelagem usando SQL e um ORM]
+    end
 
-    subgraph "Pasta Conceitos_em_Python"
-        Abstração --> {Código}
-        Associação_de_Objetos --> {Código}
-        Classes_em_python --> {Código}
-        Encapsulamento --> {Código}
-        Encapsulamento_com_getters_e_setters --> {Código}
-        Função_Anonima_Somar_Lambda_Sem_def --> {Código}
-        Herança --> {Código}
-        Listas --> {Código}
-        Polymorphism_in_Code --> {Código}
-        Range --> {Código}
-        Selecionar_linhas_de_um_DataFrame --> {Código}
-    end;
+    subgraph "Pasta Conceitos em Python"
+        U[Abstração]
+        V[Associação de Objetos]
+        W[Classes em python]
+        X[Encapsulamento]
+        Y[Encapsulamento com getters e setters]
+        Z[Função Anonima Somar Lambda Sem def]
+        AA[Herança]
+        AB[Listas]
+        AC[Polymorphism in Code]
+        AD[Range]
+        AE[Selecionar linhas de um DataFrame]
+    end
 
     subgraph "Pasta Modularidade"
-        Task_creation --> {Código}
-        Task_listing --> {Código}
-        Task_manager --> {Código}
-    end;
+        AF[Task creation]
+        AG[Task listing]
+        AH[Task manager]
+    end
 
-    subgraph "Pasta Princípios_SOLID"
-        Dependency_Inversion_Principle --> {Código}
-        Interface_Segregation_Principle --> {Código}
-        Liskov_Substitution_Principle --> {Código}
-        Open_and_Closed_Principle --> {Código}
-        Single_Responsibility_Principle --> {Código}
-    end;
+    subgraph "Pasta Princípios SOLID"
+        AI[Dependency Inversion Principle]
+        AJ[Interface Segregation Principle]
+        AK[Liskov Substitution Principle]
+        AL[Open and Closed Principle]
+        AM[Single Responsibility Principle]
+    end
 
     subgraph "Pasta Condições"
-        If_else_Valor2_e_valor1 --> {Código}
-        If_name --> {Código}
-        Usando_for --> {Código}
-        while --> {Código}
-    end;
+        AN[If else Valor2 e valor1]
+        AO[If name]
+        AP[Usando for]
+        AQ[while]
+    end
 
     subgraph "Pasta Métodos"
-        Diferença_entre_loc[]_e_iloc[] --> {Código}
-        Histogram_vs_Bar_Chart --> {Código}
-        Métodos_map()_e_apply() --> {Código}
-        NaN_(Not_a_Number) --> {Código}
-    end;
+        AR[Diferença entre loc e iloc]
+        AS[Histogram vs Bar Chart]
+        AT[Métodos map e apply]
+        AU[NaN Not a Number]
+    end
 
     subgraph "Pasta Parâmetros"
-        Args_parametro_posicional_e_não_obrigatorio --> {Código}
-        Parêmetro_nominal_e_não_obrigatório_kwargs --> {Código}
-        Parâmetro_nominal_sem_valor_default --> {Código}
-        Parâmetro_posicional_obrigatório_com_valor_default --> {Código}
-        Parâmetro_definidos_e_indefinidos --> {Código}
-    end;
+        AV[Args parametro posicional e não obrigatorio]
+        AW[Parêmetro nominal e não obrigatório kwargs]
+        AX[Parâmetro nominal sem valor default]
+        AY[Parâmetro posicional obrigatório com valor default]
+        AZ[Parâmetro definidos e indefinidos]
+    end
 
-    subgraph "Pasta Pequenos_Programas"
-        Calcular_Média_da_Nota_Final_do_Aluno --> {Código}
-        Calcular_o_Imc --> {Código}
-        Contagem_Crescente --> {Código}
-        Def_Imprimir_Mensagem --> {Código}
-        Digite_Seu_Login --> {Código}
-        Elif_Cores_do_Sinal --> {Código}
-        Equação_Linear --> {Código}
-    end;
-end;
+    subgraph "Pasta Pequenos Programas"
+        BA[Calcular Média da Nota Final do Aluno]
+        BB[Calcular o Imc]
+        BC[Contagem Crescente]
+        BD[Def Imprimir Mensagem]
+        BE[Digite Seu Login]
+        BF[Elif Cores do Sinal]
+        BG[Equação Linear]
+    end
+end
 
 
 ```
