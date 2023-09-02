@@ -1,38 +1,34 @@
 ``` mermaid
-graph TD
-
+graph TD;
 
 subgraph "Meu Portifólio - Coisas que sei fazer."
-    subgraph "Pasta Algoritmos"
-        style AlgoritmosRect fill:#f9f9f9,stroke:#1f77b4,stroke-width:2px,font-weight:bold,font-size:14px,font-family:Arial,rectangel;
+    subgraph "Pasta - Algoritmos"
         A[Algoritmo BFS Fila busca em largura]
-        A[Algoritmo Binary Search]
+        B[Algoritmo Binary Search]
         C[Algoritmo DFS Pilha busca em profundidade]
         D[Algoritmo DFS Recursividade busca em profundidade]
-        E[Algoritmo Jump Search]
+        E[Algoritmo jump search]
         F[Algoritmo Linear Search]
-        G[Algoritmo Linear Interpolation]
+        G[Algoritmo linear interpolation]
         H[Busca Binária]
         I[Busca Sequencial Ordenada com While]
         J[Merge Sort]
         K[Quick Sort]
-        L[Selection Sort] 
-    end 
+        L[Selection Sort]
+    end
 
-    subgraph "Pasta Banco de Dados"
-        style BancoDeDadosRect fill:#f9f9f9,stroke:#1f77b4,stroke-width:2px,font-weight:bold,font-size:14px,font-family:Arial,rectangel;
-
+    subgraph "Pasta - Banco de Dados"
         M[Banco de dados]
         N[Banco de Dados DBMS]
-        O[Banco de dados NoSQL]
+        O[banco de dados NoSQL]
         P[Biblioteca Matplotlib]
         Q[Biblioteca Seaborn]
         R[Importando Funções da Biblioteca]
         S[Mapeamento Objeto-Relacional ORM]
-        T[Modelagem usando SQL e um ORM]
+        T[modelagem usando SQL e um ORM]
     end
 
-    subgraph "Pasta Conceitos em Python"
+    subgraph "Pasta - Conceitos em Python"
         U[Abstração]
         V[Associação de Objetos]
         W[Classes em python]
@@ -46,13 +42,13 @@ subgraph "Meu Portifólio - Coisas que sei fazer."
         AE[Selecionar linhas de um DataFrame]
     end
 
-    subgraph "Pasta Modularidade"
+    subgraph "Pasta - Modularidade"
         AF[Task creation]
         AG[Task listing]
         AH[Task manager]
     end
 
-    subgraph "Pasta Princípios SOLID"
+    subgraph "Pasta - Princípios SOLID"
         AI[Dependency Inversion Principle]
         AJ[Interface Segregation Principle]
         AK[Liskov Substitution Principle]
@@ -60,21 +56,21 @@ subgraph "Meu Portifólio - Coisas que sei fazer."
         AM[Single Responsibility Principle]
     end
 
-    subgraph "Pasta Condições"
+    subgraph "Pasta - Condições"
         AN[If else Valor2 e valor1]
         AO[If name]
         AP[Usando for]
         AQ[while]
     end
 
-    subgraph "Pasta Métodos"
+    subgraph "Pasta - Métodos"
         AR[Diferença entre loc e iloc]
         AS[Histogram vs Bar Chart]
         AT[Métodos map e apply]
         AU[NaN Not a Number]
     end
 
-    subgraph "Pasta Parâmetros"
+    subgraph "Pasta - Parâmetros"
         AV[Args parametro posicional e não obrigatorio]
         AW[Parêmetro nominal e não obrigatório kwargs]
         AX[Parâmetro nominal sem valor default]
@@ -82,7 +78,7 @@ subgraph "Meu Portifólio - Coisas que sei fazer."
         AZ[Parâmetro definidos e indefinidos]
     end
 
-    subgraph "Pasta Pequenos Programas"
+    subgraph "Pasta - Pequenos Programas"
         BA[Calcular Média da Nota Final do Aluno]
         BB[Calcular o Imc]
         BC[Contagem Crescente]
